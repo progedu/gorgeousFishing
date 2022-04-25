@@ -1,0 +1,415 @@
+{
+	"width": 640,
+	"height": 360,
+	"fps": 30,
+	"main": "./script/main.js",
+	"assets": {
+		"main": {
+			"type": "script",
+			"path": "script/main.js",
+			"global": true
+		},
+		"Fish": {
+			"type": "script",
+			"path": "script/entity/Fish.js",
+			"global": true
+		},
+		"Resources": {
+			"type": "script",
+			"path": "script/Resources.js",
+			"global": true
+		},
+		"constants": {
+			"type": "script",
+			"path": "script/constants.js",
+			"global": true
+		},
+		"FishingRod": {
+			"type": "script",
+			"path": "script/entity/FishingRod.js",
+			"global": true
+		},
+		"Sea": {
+			"type": "script",
+			"path": "script/entity/Sea.js",
+			"global": true
+		},
+		"AStage": {
+			"type": "script",
+			"path": "script/AStage.js",
+			"global": true
+		},
+		"AudioPresenter": {
+			"type": "script",
+			"path": "script/AudioPresenter.js",
+			"global": true
+		},
+		"FieldScene": {
+			"type": "script",
+			"path": "script/FieldScene.js",
+			"global": true
+		},
+		"Global": {
+			"type": "script",
+			"path": "script/Global.js",
+			"global": true
+		},
+		"NumberValue": {
+			"type": "script",
+			"path": "script/NumberValue.js",
+			"global": true
+		},
+		"OuterParamReceiver": {
+			"type": "script",
+			"path": "script/OuterParamReceiver.js",
+			"global": true
+		},
+		"ResultScene": {
+			"type": "script",
+			"path": "script/ResultScene.js",
+			"global": true
+		},
+		"SpriteFactory": {
+			"type": "script",
+			"path": "script/SpriteFactory.js",
+			"global": true
+		},
+		"Util": {
+			"type": "script",
+			"path": "script/Util.js",
+			"global": true
+		},
+		"parameterObject": {
+			"type": "script",
+			"path": "script/parameterObject.js",
+			"global": true
+		},
+		"ui_common": {
+			"type": "image",
+			"width": 1024,
+			"height": 1024,
+			"path": "image/ui_common.png"
+		},
+		"glyph28": {
+			"type": "text",
+			"path": "text/glyph28.json"
+		},
+		"glyph72": {
+			"type": "text",
+			"path": "text/glyph72.json"
+		},
+		"glyph32_yellow": {
+			"type": "text",
+			"path": "text/glyph32_yellow.json"
+		},
+		"jin_000": {
+			"type": "audio",
+			"path": "audio/jin_000",
+			"systemId": "sound",
+			"duration": 2984
+		},
+		"se_001a": {
+			"type": "audio",
+			"path": "audio/se_001a",
+			"systemId": "sound",
+			"duration": 1237
+		},
+		"se_001c": {
+			"type": "audio",
+			"path": "audio/se_001c",
+			"systemId": "sound",
+			"duration": 770
+		},
+		"se_002c": {
+			"type": "audio",
+			"path": "audio/se_002c",
+			"systemId": "sound",
+			"duration": 1005
+		},
+		"se_003": {
+			"type": "audio",
+			"path": "audio/se_003",
+			"systemId": "sound",
+			"duration": 2171
+		},
+		"se_004": {
+			"type": "audio",
+			"path": "audio/se_004",
+			"systemId": "sound",
+			"duration": 1104
+		},
+		"se_100c": {
+			"type": "audio",
+			"path": "audio/se_100c",
+			"systemId": "sound",
+			"duration": 924
+		},
+		"TitleScene": {
+			"type": "script",
+			"path": "script/TitleScene.js",
+			"global": true
+		},
+		"FieldScore": {
+			"type": "script",
+			"path": "script/FieldScore.js",
+			"global": true
+		},
+		"GameTimer": {
+			"type": "script",
+			"path": "script/GameTimer.js",
+			"global": true
+		},
+		"ReadyGo": {
+			"type": "script",
+			"path": "script/ReadyGo.js",
+			"global": true
+		},
+		"TimeOver": {
+			"type": "script",
+			"path": "script/TimeOver.js",
+			"global": true
+		},
+		"GameOver": {
+			"type": "script",
+			"path": "script/GameOver.js",
+			"global": true
+		},
+		"se_explosion": {
+			"type": "audio",
+			"path": "audio/se_explosion",
+			"systemId": "sound",
+			"duration": 2555
+		},
+		"FieldPopupLabel": {
+			"type": "script",
+			"path": "script/FieldPopupLabel.js",
+			"global": true
+		},
+		"bgm_dm": {
+			"type": "audio",
+			"path": "audio/bgm_dm",
+			"systemId": "sound",
+			"duration": 51201
+		},
+		"bgm_gohands": {
+			"type": "audio",
+			"path": "audio/bgm_gohands",
+			"systemId": "sound",
+			"duration": 57287
+		},
+		"bgm_madarasukaru": {
+			"type": "audio",
+			"path": "audio/bgm_madarasukaru",
+			"systemId": "sound",
+			"duration": 45000
+		},
+		"bgm_namaon": {
+			"type": "audio",
+			"path": "audio/bgm_namaon",
+			"systemId": "sound",
+			"duration": 57731
+		},
+		"bgm_sabaneko": {
+			"type": "audio",
+			"path": "audio/bgm_sabaneko",
+			"systemId": "sound",
+			"duration": 56112
+		},
+		"gozyasu_dm": {
+			"type": "image",
+			"path": "image/gozyasu_dm.png",
+			"width": 200,
+			"height": 150
+		},
+		"gozyasu_masakichi": {
+			"type": "image",
+			"path": "image/gozyasu_masakichi.png",
+			"width": 125,
+			"height": 113
+		},
+		"gozyasu_muxutube_danball": {
+			"type": "image",
+			"path": "image/gozyasu_muxutube_danball.png",
+			"width": 200,
+			"height": 150
+		},
+		"gozyasu_muxutube_rocket": {
+			"type": "image",
+			"path": "image/gozyasu_muxutube_rocket.png",
+			"width": 200,
+			"height": 150
+		},
+		"gozyasu_nyanu": {
+			"type": "image",
+			"path": "image/gozyasu_nyanu.png",
+			"width": 200,
+			"height": 150
+		},
+		"gozyasu_odu": {
+			"type": "image",
+			"path": "image/gozyasu_odu.png",
+			"width": 200,
+			"height": 150
+		},
+		"gozyasu_ringomarknoa": {
+			"type": "image",
+			"path": "image/gozyasu_ringomarknoa.png",
+			"width": 150,
+			"height": 200
+		},
+		"gozyasu_shinkeya": {
+			"type": "image",
+			"path": "image/gozyasu_shinkeya.png",
+			"width": 200,
+			"height": 150
+		},
+		"gozyasu_ss": {
+			"type": "image",
+			"path": "image/gozyasu_ss.png",
+			"width": 250,
+			"height": 375
+		},
+		"title_mitta": {
+			"type": "image",
+			"path": "image/title_mitta.png",
+			"width": 640,
+			"height": 360
+		},
+		"dragoncube01": {
+			"type": "image",
+			"path": "image/dragoncube01.png",
+			"width": 80,
+			"height": 80
+		},
+		"dragoncube02": {
+			"type": "image",
+			"path": "image/dragoncube02.png",
+			"width": 80,
+			"height": 80
+		},
+		"dragoncube03": {
+			"type": "image",
+			"path": "image/dragoncube03.png",
+			"width": 80,
+			"height": 80
+		},
+		"bg_space": {
+			"type": "image",
+			"path": "image/bg_space.png",
+			"width": 640,
+			"height": 360
+		},
+		"estar": {
+			"type": "audio",
+			"path": "audio/estar",
+			"systemId": "sound",
+			"duration": 3109
+		},
+		"mada": {
+			"type": "audio",
+			"path": "audio/mada",
+			"systemId": "sound",
+			"duration": 2743
+		},
+		"revo": {
+			"type": "audio",
+			"path": "audio/revo",
+			"systemId": "sound",
+			"duration": 941
+		},
+		"fish_freelance": {
+			"type": "image",
+			"path": "image/fish_freelance.png",
+			"width": 200,
+			"height": 150
+		},
+		"fish_mint": {
+			"type": "image",
+			"path": "image/fish_mint.png",
+			"width": 200,
+			"height": 200
+		},
+		"fish_mixityan": {
+			"type": "image",
+			"path": "image/fish_mixityan.png",
+			"width": 939,
+			"height": 547
+		},
+		"fish_ryouran": {
+			"type": "image",
+			"path": "image/fish_ryouran.png",
+			"width": 1920,
+			"height": 1080
+		},
+		"fish_takarabako": {
+			"type": "image",
+			"path": "image/fish_takarabako.png",
+			"width": 200,
+			"height": 200
+		},
+		"fish_gadhirasu": {
+			"type": "image",
+			"path": "image/fish_gadhirasu.png",
+			"width": 197,
+			"height": 195
+		},
+		"fish_gonbirasu": {
+			"type": "image",
+			"path": "image/fish_gonbirasu.PNG",
+			"width": 164,
+			"height": 132
+		},
+		"fish_hurora": {
+			"type": "image",
+			"path": "image/fish_hurora.png",
+			"width": 172,
+			"height": 198
+		},
+		"fish_madagasukaru": {
+			"type": "image",
+			"path": "image/fish_madagasukaru.png",
+			"width": 150,
+			"height": 200
+		},
+		"fish_mixi": {
+			"type": "image",
+			"path": "image/fish_mixi.PNG",
+			"width": 114,
+			"height": 138
+		},
+		"fish_wakusei": {
+			"type": "image",
+			"path": "image/fish_wakusei.png",
+			"width": 212,
+			"height": 134
+		},
+		"finish": {
+			"type": "audio",
+			"path": "audio/finish",
+			"systemId": "sound",
+			"duration": 1803
+		}
+	},
+	"environment": {
+		"sandbox-runtime": "3",
+		"niconico": {
+			"supportedModes": [
+				"single",
+				"ranking"
+			],
+			"preferredSessionParameters": {
+				"totalTimeLimit": 62
+			}
+		}
+	},
+	"globalScripts": [
+		"node_modules/@akashic-extension/akashic-timeline/lib/ActionType.js",
+		"node_modules/@akashic-extension/akashic-timeline/lib/Easing.js",
+		"node_modules/@akashic-extension/akashic-timeline/lib/Timeline.js",
+		"node_modules/@akashic-extension/akashic-timeline/lib/Tween.js",
+		"node_modules/@akashic-extension/akashic-timeline/lib/index.js"
+	],
+	"moduleMainScripts": {
+		"@akashic-extension/akashic-timeline": "node_modules/@akashic-extension/akashic-timeline/lib/index.js"
+	}
+}

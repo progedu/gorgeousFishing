@@ -1,0 +1,32 @@
+{
+  "name": "tsurikkuma-style-game-sample",
+  "private": true,
+  "version": "0.1.0",
+  "description": "tsurikkuma-style game sample",
+  "main": "./script/main.js",
+  "scripts": {
+    "build": "rimraf ./script && tsc && akashic-cli-scan asset script",
+    "update": "akashic-cli-scan asset && akashic-cli-scan globalScripts",
+    "start": "akashic-sandbox",
+    "zip": "yarn build && rm -rf game.zip && akashic export html --atsumaru --output ./game.zip",
+    "lint": "eslint -c .eslintrc src/**/*.ts --fix"
+  },
+  "author": "DWANGO Co., Ltd.",
+  "license": "MIT",
+  "devDependencies": {
+    "@akashic/akashic-cli-scan": "~0.5.66",
+    "@akashic/akashic-engine": "^3.4.1",
+    "@akashic/akashic-sandbox": "~0.16.22",
+    "@akashic/eslint-config": "^0.1.2",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "eslint": "^7.12.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "rimraf": "3.0.2",
+    "typescript": "4.0.5"
+  },
+  "dependencies": {
+    "@akashic-extension/akashic-timeline": "^3.1.0"
+  }
+}
