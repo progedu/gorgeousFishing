@@ -1,8 +1,8 @@
 {
-  "name": "tsurikkuma-style-game-sample",
+  "name": "gorgeous-fishing",
   "private": true,
   "version": "0.1.0",
-  "description": "tsurikkuma-style game sample",
+  "description": "超会議2022 N予備校特別番組「ゴー☆ジャスPのゲーム開発レボリューション!!」で制作したゴー☆ジャスな釣りゲームです",
   "main": "./script/main.js",
   "scripts": {
     "build": "rimraf ./script && tsc && akashic-cli-scan asset script",
