@@ -1,9 +1,14 @@
 # 超ゴージャス魚つり
 
-つりっくまのような制限時間内に魚を釣るゲームを改造することで、オリジナルのゲームを作りました。
+[超会議2022 N予備校特別番組「ゴー☆ジャスPのゲーム開発レボリューション!!」](https://live.nicovideo.jp/watch/lv336228628)で制作した魚釣りゲームです。
+こちらのゲームは、[Akashicサンプルカタログ](https://akashic-contents.github.io/samples/)の[つりっくま風ゲーム](https://akashic-contents.github.io/samples/game/tsurikkuma-style-game-ts.html)
+をベースに制作されました。
 
 # ニコニコ生放送
 https://live.nicovideo.jp/watch/lv336228628
+
+# ゲームアツマール
+https://game.nicovideo.jp/atsumaru/games/gm25468
 
 # ゲームアツマール・ニコ生向けにzip出力
 
@@ -12,7 +17,7 @@ yarn zip
 ```
 
 # 画像利用の方法
-1. image下に保存
+1. 画像ファイルをimage下に保存
 1. `akashic scan asset` を実行し、画像を `game.json` に登録
 
 1. 呼び出し方
@@ -33,10 +38,9 @@ new g.Sprite({
 });
 ```
 
-# 音声収録・利用の方法
-1. iPhoneのボイスレコーダーアプリで音声を収録(m4a形式)
-1. https://convertio.co/ja/ にアクセスし、m4a形式のファイルをアップロード。ogg形式とaac形式に変換する
-1. ogg形式とaac形式の2ファイルをダウンロードし、audio下に保存
+# 音声利用の方法
+1. 音声ファイルがmp3, mp4, wav形式のいずれかであれば、[complet-audio](https://github.com/akashic-games/complete-audio)を用いて、ogg形式とaac形式の2ファイルに変換します※1
+1. 変換済みの2ファイルをaudio下に保存
 1. `akashic scan asset` を実行し、音声を `game.json` に登録
 
 1. 呼び出し方
@@ -47,6 +51,8 @@ AudioPresenter_1.AudioPresenter.instance.playBGM("bgm_130");
 // SEの場合
 AudioPresenter.instance.playSE("se_001a");
 ```
+
+※1: mp3, mp4, wav以外の形式には対応していないため、その場合は別途手段でogg形式とaac形式の2ファイルに変換する必要があります
 
 ## 実行方法
 
